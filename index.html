@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Estates | Find Your Next Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Prime<span>Estates</span></div>
+    <nav class="nav">
+      <a href="#listings">Listings</a>
+      <a href="#neighborhoods">Neighborhoods</a>
+      <a href="#testimonials">Stories</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cta ghost">Book a Tour</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Award-winning boutique agency</p>
+      <h1>Find a home that fits the way you live.</h1>
+      <p class="lede">Curated properties, expert local agents, and seamless end-to-end guidance from first viewing to closing.</p>
+      <div class="hero__actions">
+        <button class="cta">Browse homes</button>
+        <button class="cta ghost">Talk to an agent</button>
+      </div>
+      <form class="search">
+        <input type="text" name="location" placeholder="City or ZIP" required>
+        <select name="type">
+          <option value="">Property type</option>
+          <option>Single Family</option>
+          <option>Condo</option>
+          <option>Townhome</option>
+          <option>Luxury</option>
+        </select>
+        <select name="budget">
+          <option value="">Budget</option>
+          <option>Under $500k</option>
+          <option>$500k - $1M</option>
+          <option>$1M - $2M</option>
+          <option>$2M+</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+      <div class="hero__stats">
+        <div><strong>850+</strong><span>Families moved</span></div>
+        <div><strong>42</strong><span>Neighborhood experts</span></div>
+        <div><strong>98%</strong><span>List-to-sale ratio</span></div>
+      </div>
+    </div>
+    <div class="hero__media">
+      <div class="media-card">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Modern home exterior">
+        <div class="media-card__info">
+          <p>Marina District</p>
+          <strong>$1.85M • 4 bd • 3.5 ba • 2,450 sqft</strong>
+          <span>Listed this week · Private showings open</span>
+        </div>
+      </div>
+      <div class="badge">
+        <p>New to market</p>
+        <strong>10</strong>
+        <span>exclusive listings this month</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="listings" class="section listings">
+    <div class="section__header">
+      <div>
+        <p class="eyebrow">Featured</p>
+        <h2>Handpicked homes you can tour this week</h2>
+      </div>
+      <div class="filter" aria-label="Filter listings">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="new">New</button>
+        <button data-filter="luxury">Luxury</button>
+        <button data-filter="beach">Beachfront</button>
+      </div>
+    </div>
+    <div class="cards" id="listingGrid">
+      <article class="card" data-category="new">
+        <img src="https://images.unsplash.com/photo-1505693415763-3ed5e04ba4cd?auto=format&fit=crop&w=1200&q=80" alt="Glass townhome">
+        <div class="card__body">
+          <p class="tag">New</p>
+          <h3>Light-filled townhome</h3>
+          <p class="muted">SoMa • 3 bd • 2.5 ba • 1,920 sqft</p>
+          <p class="price">$1,250,000</p>
+          <div class="card__meta">
+            <span>Open Sat 12-3pm</span>
+            <span>Agent: C. Morris</span>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="luxury">
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80" alt="Luxury villa">
+        <div class="card__body">
+          <p class="tag">Luxury</p>
+          <h3>Hillside modern villa</h3>
+          <p class="muted">Twin Peaks • 5 bd • 5.5 ba • 4,850 sqft</p>
+          <p class="price">$4,400,000</p>
+          <div class="card__meta">
+            <span>Private showings</span>
+            <span>Agent: R. Chen</span>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="beach">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80" alt="Beach house">
+        <div class="card__body">
+          <p class="tag">Beachfront</p>
+          <h3>Oceanfront craftsman</h3>
+          <p class="muted">Baker Beach • 4 bd • 3 ba • 2,780 sqft</p>
+          <p class="price">$2,950,000</p>
+          <div class="card__meta">
+            <span>Sunset views</span>
+            <span>Agent: L. Patel</span>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="luxury">
+        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80" alt="High rise condo">
+        <div class="card__body">
+          <p class="tag">Luxury</p>
+          <h3>Penthouse with skyline deck</h3>
+          <p class="muted">Downtown • 3 bd • 3 ba • 2,150 sqft</p>
+          <p class="price">$3,150,000</p>
+          <div class="card__meta">
+            <span>Includes valet</span>
+            <span>Agent: A. Rivera</span>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="new">
+        <img src="https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=1200&q=80" alt="Suburban home">
+        <div class="card__body">
+          <p class="tag">New</p>
+          <h3>Suburban retreat</h3>
+          <p class="muted">Mill Valley • 4 bd • 3.5 ba • 2,640 sqft</p>
+          <p class="price">$1,780,000</p>
+          <div class="card__meta">
+            <span>Backyard studio</span>
+            <span>Agent: M. Blake</span>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="beach">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Coastal modern home">
+        <div class="card__body">
+          <p class="tag">Beachfront</p>
+          <h3>Coastal modern</h3>
+          <p class="muted">Stinson • 3 bd • 3 ba • 2,120 sqft</p>
+          <p class="price">$2,480,000</p>
+          <div class="card__meta">
+            <span>Walk to sand</span>
+            <span>Agent: J. Lee</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="neighborhoods" class="section neighborhoods">
+    <div class="section__header">
+      <div>
+        <p class="eyebrow">Where we operate</p>
+        <h2>Neighborhood spotlights</h2>
+      </div>
+      <p class="muted">We pair buyers with agents who live and work in these communities daily.</p>
+    </div>
+    <div class="grid">
+      <div class="grid__item">
+        <img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=900&q=80" alt="City street">
+        <div class="grid__body">
+          <h3>Pacific Heights</h3>
+          <p>Historic mansions, parks, and skyline views.</p>
+        </div>
+      </div>
+      <div class="grid__item">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=900&q=80" alt="Bridge">
+        <div class="grid__body">
+          <h3>Marina District</h3>
+          <p>Waterfront paths, boutiques, and lively dining.</p>
+        </div>
+      </div>
+      <div class="grid__item">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Neighborhood">
+        <div class="grid__body">
+          <h3>Mill Valley</h3>
+          <p>Redwood trails, great schools, room to breathe.</p>
+        </div>
+      </div>
+      <div class="grid__item">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80" alt="Beach">
+        <div class="grid__body">
+          <h3>Stinson Beach</h3>
+          <p>Modern beachfront escapes with ocean breezes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section testimonials">
+    <div class="section__header">
+      <div>
+        <p class="eyebrow">Client stories</p>
+        <h2>Buying and selling made simple</h2>
+      </div>
+      <div class="pills">
+        <span class="pill">Concierge staging</span>
+        <span class="pill">Off-market access</span>
+        <span class="pill">Negotiation experts</span>
+      </div>
+    </div>
+    <div class="testimonial">
+      <p class="quote">“Prime Estates sold our home in nine days, above asking, and found us a new place without ever hitting the public market.”</p>
+      <div class="person">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&q=80" alt="Client portrait">
+        <div>
+          <strong>Alex & Priya R.</strong>
+          <span>Relocated to Twin Peaks</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <p class="quote">“Their agent lived two blocks away and knew every comp by heart. We felt confident at every step.”</p>
+      <div class="person">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80" alt="Client portrait">
+        <div>
+          <strong>Michael C.</strong>
+          <span>Purchased in Pacific Heights</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="contact__content">
+      <p class="eyebrow">Ready to tour?</p>
+      <h2>Tell us what home means to you.</h2>
+      <p class="muted">We match you with the right agent and schedule a tour within 24 hours.</p>
+      <ul class="bullets">
+        <li>Dedicated local specialist</li>
+        <li>Private showings and virtual tours</li>
+        <li>Financing introductions on request</li>
+      </ul>
+      <div class="contact__meta">
+        <span>Average reply: 2 hours</span>
+        <span>Off-market network: 300+ homes</span>
+      </div>
+    </div>
+    <form class="contact__form" id="contactForm">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Move-in timeline
+        <select name="timeline" required>
+          <option value="">Select</option>
+          <option>0-3 months</option>
+          <option>3-6 months</option>
+          <option>6-12 months</option>
+          <option>Exploring</option>
+        </select>
+      </label>
+      <label>
+        What are you looking for?
+        <textarea name="message" rows="3" placeholder="Beds, budget, neighborhoods..." required></textarea>
+      </label>
+      <button type="submit">Send request</button>
+      <p class="form__status" id="formStatus" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <div class="logo">Prime<span>Estates</span></div>
+      <p class="muted">Boutique real estate brokerage helping Bay Area buyers and sellers move with confidence.</p>
+    </div>
+    <div class="footer__links">
+      <div>
+        <strong>Buy</strong>
+        <a href="#listings">Browse homes</a>
+        <a href="#neighborhoods">Neighborhoods</a>
+      </div>
+      <div>
+        <strong>Sell</strong>
+        <a href="#contact">List your home</a>
+        <a href="#testimonials">Client stories</a>
+      </div>
+      <div>
+        <strong>Visit</strong>
+        <a href="mailto:hello@primeestates.com">hello@primeestates.com</a>
+        <a href="tel:+14155550123">(415) 555-0123</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
+
